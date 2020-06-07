@@ -9,9 +9,11 @@ package com.example.android_line_chart;
 
 
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -79,6 +81,15 @@ public class MainActivity extends AppCompatActivity  {
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(set1);
         LineData data = new LineData(dataSets);
+
+        Description descr = new Description();
+        descr.setText(" Descr : Chart  Time vs Money");
+        descr.setTextAlign(Paint.Align.CENTER);
+
+//        descr.setPosition(500,200);
+        descr.setTextSize(20);
+        descr.setTextColor(Color.rgb(0,0,255));
+        mChart.setDescription(descr);
         mChart.setData(data);
 
 
