@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mChart = (LineChart) findViewById(R.id.linechart);
-//        mChart.setOnChartGestureListener(MainActivity.this);
-//        mChart.setOnChartValueSelectedListener(MainActivity.this);
         mChart.setDragEnabled(true);
         mChart.setScaleEnabled(false);
         mChart.setBackgroundColor(Color.rgb(200,200,100));
