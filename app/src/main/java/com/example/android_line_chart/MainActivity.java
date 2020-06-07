@@ -3,6 +3,8 @@ package com.example.android_line_chart;
 // Status : This chart worked fine. Sucess.
 //Worked Fine with Line charts. No Animation .
 
+// Taken from Youtube video link : https://www.youtube.com/watch?v=DD1CxoVONFE&list=PLc2rvfiptPSR7NliWRLwweX55XwrsrTOO&index=2
+
 
 
 import android.graphics.Color;
